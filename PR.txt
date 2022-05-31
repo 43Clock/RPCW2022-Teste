@@ -1,0 +1,17 @@
+Luis Carlos da Costa Salazar Martins PG47412
+
+Exercicio 1:
+    - Para ter persistência comecei por pegar no json fornecido e dividio em 2 json, um de ligacoes e outro de cidades
+    - Para adicionar estes novos json's à base de dados utilizei os seguintes comandos:
+        mongoimport -d MAPA2022 -c cidades cidades.json --jsonArray
+        mongoimport -d MAPA2022 -c ligacoes ligacoes.json --jsonArray
+      que adicionam à base de dado MAPA2022 as coleções cidades e ligacoes
+    - Para comecar a desenvolver a api de dados executei o comando npx express-generator --view=pug para gerar a base para o express bem como definir a view como pug
+    - Para testar a api de dados pode-se utilizar o comando 'npm run start' e de seguida basta aceder ao localhost na porta 3001
+
+Exercicio 2:
+    - Para o aquecimento, recorri ao Postman para responder às perguntas propostas, encontrando-se os resultados às mesmas no ficheiro aquecimento.txt
+    - De seguida, e tambem no Postman fiz um post para http://clav-api.di.uminho.pt/v2/users/login com as credenciais (username: "rpcw2022@gmail.com", password:"2022")
+        de modo a obter o token para ser possivel utilizar a api da clave. Este token será usado diretamente na aplicação
+    - Do mesmo modo como  para o Exercicio 1 executei o comando npx express-generator --view=pug para gerar a base para o express bem como definir a view como pug
+    - Para testar a aplicação, fazer 'npm run start' e aceder ao localhost na porta 3002

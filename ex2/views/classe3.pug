@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div(class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue")
+    h1(class="w3-center")=data.titulo
+    p
+        b Descrição: 
+        =data.descricao
+  ul(class="w3-ul w3-border")
+    li(class="w3-blue")
+      h3 Termos de indice
+    each ele in data.termosInd
+      li
+        a(href="/termos")=ele.termo 
+  p(class="w3-center")
+    a(href="/") Página Inicial 

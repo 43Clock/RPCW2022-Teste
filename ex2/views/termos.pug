@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h2(class="w3-center") Termos de Indice
+  table(class="w3-table w3-striped w3-border")
+    tr(class="w3-blue")
+      th Termo
+      th Id da Classe
+      th Classe 
+    each ele in data
+      tr 
+        td=ele.termo 
+        td
+          a(href="/classes/c"+ele.idClasse)=ele.idClasse 
+        td=ele.tituloClasse 
+  p(class="w3-center")
+    a(href="/") Página Inicial

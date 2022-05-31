@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h2(class="w3-center") Classes
+  table(class="w3-table w3-striped w3-border")
+    tr(class="w3-blue")
+      th Código
+      th Titulo
+    each ele in classes
+      tr 
+        td
+          a(href="/classes/c"+ele.codigo)=ele.codigo 
+        td=ele.titulo
+  
